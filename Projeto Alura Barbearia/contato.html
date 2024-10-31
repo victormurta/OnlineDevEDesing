@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+
+    </head>
+
+    <body>
+        <header>
+            <div class="margem">
+                <h1><img id="logo" src="logo.png" alt="Logo da Barbearia"></h1>            
+                <nav>
+                    <ul>
+            
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li> 
+                        <li><a href="contato.html">Contato</a></li> 
+            
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                
+                <label for="name">Nome e Sobrenome:</label>
+                <input type="text" id="name" class="texts" placeholder="Nome Sobrenome" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="texts" placeholder="email@provedor.com.br" required>
+    
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel" class="texts" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea cols="70" rows="10"  id="mensagem" class="texts" required></textarea>
+                
+                <fieldset>
+                    <legend>Qual é a melhor forma de entrarmos em contato?</legend>
+                    <label><input type="radio" name="contato" value="wpp" checked>What's app</label>
+                    <label><input type="radio" name="contato" value="email">E-mail</label>
+                    <label><input type="radio" name="contato" value="lig">Telefone</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label><input type="checkbox" class="checkbox" checked> Gostaria de receber novidades por E-mail?</label>
+
+                <input type="submit" value="Enviar informações" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td c>Segunda</td>
+                        <td>8h ~ 18h</td>
+                    </tr>
+                    <tr>
+                        <td >Quarta</td>
+                        <td>8h ~ 18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 18h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="logo-branco.png" alt="Logo da Barbearia">
+            <p class="copy">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
+    </body>
+</html>

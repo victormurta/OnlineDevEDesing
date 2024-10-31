@@ -1,0 +1,216 @@
+/* cabecalho*/
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.margem{
+    position: relative;
+    width: auto;
+    margin: 0 10%;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgba(159, 69, 0, 0.789);
+    text-decoration: underline;
+}
+
+/* produtos e precos*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    width: auto;
+}
+
+.listaprodutos{
+    width: auto;
+    margin: 0 auto;
+}
+
+.listaprodutos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 20px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px #000000 solid;
+    border-radius: 10px;
+}
+
+.listaprodutos li:hover{
+    border-color: rgba(159, 69, 0, 0.789);
+}
+
+.listaprodutos li:active{
+    border-color: rgba(240, 148, 0, 0.789);
+}
+
+.listaprodutos li:hover h2{
+    font-size: 28px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.resumo{
+    font-size: 20px;
+}
+
+.valor{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* rodape*/
+
+footer{
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 20px 0;
+}
+
+.copy{
+    color: #FFFFFF;
+}
+
+/* formulario*/
+main{
+    width: auto;
+    margin: 0 auto;
+}
+
+form{
+    margin: 50px;
+}
+
+form label, form legend{
+    display: block;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.texts{
+    margin: 0 0 15px;
+    padding: 15px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background:rgba(240, 148, 0, 0.789);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background:rgba(159, 69, 0, 0.789);
+    transform:scale(1.2);
+    border-radius: 50px;
+}
+
+table{
+    margin: 10px 50px 20px;
+    font-size: 20px;
+}
+
+table th{
+    background: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+th, td{
+    border: 1px solid #000000;
+    padding: 4px;
+}
+
+/* celulares */
+
+@media screen and (max-width: 480px){
+
+    h1{
+        display: block;
+        text-align: center;
+    }
+    
+    .logo{
+        display: relative;
+        text-align:center;
+    }
+
+    ul {
+        display: block;
+    }
+
+    nav{
+        position: static;
+    }
+
+    nav li{
+        font-size: 0.75em;
+        margin: 0 0 0 %;
+    }
+
+    .listaprodutos{
+        width: 90%;
+    }
+
+    .listaprodutos li{
+        width: 90%;
+
+    }
+
+    .form{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .texts{
+        width: 70%;
+    }
+
+    .enviar{
+        width: 70%;
+    }
+
+}

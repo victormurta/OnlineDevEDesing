@@ -1,0 +1,210 @@
+/* cabecalho*/
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.margem{
+    position: relative;
+    width: auto;
+    margin: 0 10%;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgba(159, 69, 0, 0.789);
+    text-decoration: underline;
+}
+
+/* main pagina principal */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main{
+    width: auto;
+    margin: 0 2%;
+    background: #FEFEFE;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.banner{
+    width: 100%
+}
+
+.titcent {
+    font-size: 2em;
+    text-align:center;
+    font-weight: bold;
+    padding: 0.5em 0 1em;
+    clear: left;
+}
+
+.utensilios{
+    width: 10%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+p:first-letter{
+    font-style: italic;
+}
+
+
+.main p {
+    text-align: left;
+    padding: 0 0 1em;
+}
+
+.main p em{
+    font-style: italic;
+}
+
+em strong {
+    font-weight: bold;
+}
+
+/*localização*/
+
+.mapa {
+    text-align: center;
+    padding: 3em 0 1em;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.loc{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mapa p{
+    padding: 0 0;
+    padding: 0 0 1em;
+}
+
+/*benefícios*/
+
+.beneficios{
+    background: #888888;
+}
+
+.principal-beneficios{
+    width: auto;
+    margin: 0 10%;
+}
+
+.lista-beneficios{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.itensl1{
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
+.itensl1:first-child{
+    font-weight: bold;
+}
+
+.itensl1:before{
+    content: "✧";
+}
+
+.extra1{
+    width: 60%;
+    opacity: 0.3;
+    box-shadow: 10px 10px 5px #333333;
+    transition: 400ms;
+}
+
+.extra1:hover{
+    opacity: 1;
+}
+
+.video{
+    margin: 2em;
+    text-align: center;
+}
+
+/* rodapé */
+
+footer{
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 20px 0;
+}
+
+.copy{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 480px){
+
+    h1{
+        display: block;
+        text-align: center;
+    }
+    
+    .logo{
+        display: relative;
+        text-align:center;
+    }
+
+    ul {
+        display: block;
+    }
+
+    nav{
+        position: static;
+    }
+
+    nav li{
+        font-size: 0.75em;
+        margin: 0 0 0 2%;
+        text-align: center;
+    }
+
+    .utensilios{
+        width: 30%;
+    }
+
+    p{
+        font-size: 1.25em;
+    }
+
+    .lista-beneficios{
+        display: block;
+        width: 90%;
+    }
+    
+    .extra1{
+        width: 90%;
+    }
+}
